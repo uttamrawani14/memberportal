@@ -1,0 +1,113 @@
+<mat-grid-list cols="6" rowHeight="150px">
+    <mat-grid-tile [colspan]="6" [rowspan]="2">
+        <mat-card class="statusCard mat-elevation-z8">
+            <mat-card-content>
+                <div style="padding: 10px;">
+                    <div fxLayout="row wrap" fxLayoutGap="10px grid">
+                        <div fxFlex="60%">
+                            <p class="welcome">Welcome Mr Uttam</p>
+                            <mat-divider class="ruleLine"></mat-divider>
+                            <p class="msg">An insurance Claim protects an individual from prospect of large financial burdens resulting from an accident or illness.</p>
+                            <p class="msg1">The majority of medicals are adjudicated electronically.</p>
+                            <p class="msg1">It is importaint to have a track of your <span style="color: #0c72ba;">Claim Status</span></p>
+                        </div>
+
+                        <div fxFlex="40%">
+                            <img src="../../../../../assets/images/bike-insurance-claim.png" width="420px" class="img1">
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="6" rowHeight="120px">
+    <mat-grid-tile [colspan]="6" [rowspan]="2">
+        <div class="tableHeading">Total Filed Claims</div>
+        <table class="table table-bordered forTable mat-elevation-z8">
+            <thead>
+                <tr>
+                    <th scope="col">Claim</th>
+                    <th scope="col">DOI</th>
+                    <th scope="col">Policy</th>
+                    <th scope="col">Billed Amount</th>
+                    <th scope="col">Paid Amount</th>
+                    <th scope="col">Copay</th>
+                    <th scope="col">Coinsurance</th>
+                    <th scope="col">Deductible</th>
+                    <th scope="col">View Status</th>
+                    <th scope="col">EOB</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="cursor: pointer;text-decoration: underline;color: #0c72ba;" (click)="claimStatus()">CLM123</td>
+                    <td>01/01/2020</td>
+                    <td>546732</td>
+                    <td>120,000</td>
+                    <td>90,000</td>
+                    <td>5%</td>
+                    <td>20%</td>
+                    <td>$1,100</td>
+                    <td>Paid</td>
+                    <td style="cursor: pointer;text-decoration: underline;color: #0c72ba;">View/Download</td>
+                </tr>
+                <tr>
+                    <td style="cursor: pointer;text-decoration: underline;color: #0c72ba;">CLM789</td>
+                    <td>01/11/2019</td>
+                    <td>546732</td>
+                    <td>90,000</td>
+                    <td>84,000</td>
+                    <td>5%</td>
+                    <td>20%</td>
+                    <td>$1,100</td>
+                    <td>In Progress</td>
+                    <td style="cursor: pointer;text-decoration: underline;color: #0c72ba;">View/Download</td>
+                </tr>
+                <tr>
+                    <td style="cursor: pointer;text-decoration: underline;color: #0c72ba;">CLM456</td>
+                    <td>02/11/2018</td>
+                    <td>546732</td>
+                    <td>30,000</td>
+                    <td>22,000</td>
+                    <td>5%</td>
+                    <td>20%</td>
+                    <td>$1,100</td>
+                    <td>Denied</td>
+                    <td style="cursor: pointer;text-decoration: underline;color: #0c72ba;">View/Download</td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="6" rowHeight="120px" *ngIf="displayClaimStatus == true">
+    <mat-grid-tile [colspan]="6" [rowspan]="2">
+        <mat-card class="statusCard mat-elevation-z8">
+            <mat-card-content>
+                <mat-horizontal-stepper labelPosition="bottom">
+
+                    <mat-step label="Claim Received"></mat-step>
+
+                    <mat-step label="Document Review Done"></mat-step>
+
+                    <mat-step label="Sent For Approval"></mat-step>
+
+                    <mat-step label="Approval Received"></mat-step>
+
+                    <mat-step label="Payment Initiated"></mat-step>
+
+                    <mat-step label="Claim Closed"></mat-step>
+
+                </mat-horizontal-stepper>
+            </mat-card-content>
+            <div>
+                <button mat-raised-button class="btn1" routerLink="/Health/viewDeatils">View Details</button>
+                <button mat-raised-button class="btn2">Cancel</button>
+            </div>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+
+<br>

@@ -1,0 +1,57 @@
+.heading {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    color: #ffcc00;
+}
+
+.smallHeading {
+    font-size: 15px;
+    /* margin-left: 10px; */
+    padding-top: 0px;
+    opacity: 0.85;
+}
+
+.content {
+    padding: 15px;
+    padding-top: 0px;
+}
+
+.pdf {
+    color: tomato;
+}
+
+.download {
+    color: #F7D97C;
+}
+
+.secondCard {
+    color: gray;
+    font-size: 15px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.firstCard {
+    color: gray;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.secondTitle {
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+
+span {
+    font-size: 10px;
+    color: gray;
+    margin-left: 25px;
+    display: inline-block;
+}
+
+mat-card {
+    border: 1px solid #43434366;
+    width: 100%;
+}
+

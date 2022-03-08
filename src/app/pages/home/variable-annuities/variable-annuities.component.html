@@ -1,0 +1,349 @@
+<br>
+<div class="mat-elevation-z8" style="border: 1px solid #43434366;">
+    <div class="content">
+        <div fxLayout="row wrap" fxLayoutGap="20px grid">
+            <div fxFlex="4%">
+                <img src="../../../../assets/images/time-is-money.png" width="40px"
+                    style="margin-left: 2%; margin-top: 2%;">
+            </div>
+            <div fxFlex="83.5%">
+                <p style="margin-left: 2%; font-weight: 500;">Variable Annuities<br>
+                    (VA9999123)</p>
+            </div>
+            <div fxFlex="10%">
+                <button mat-button color="accent" *ngIf="show==false" (click)="openDialog()">Manage <mat-icon>list
+                    </mat-icon></button>
+                <button mat-button color="accent" *ngIf="addmorenom==true" (click)="openDialog1()">Manage <mat-icon>list
+                    </mat-icon></button>
+            </div>
+        </div>
+    </div>
+    <div class="content" *ngIf="show==false">
+        <div fxLayout="row wrap" fxLayoutGap="20px grid">
+            <div fxFlex="23%">
+                <mat-card class="mat-elevation-z8" style="background-color:#f3da69;border: 1px solid #43434366;">
+
+                    <p style="text-align: center;">
+                        Policy Value
+                    </p>
+                    <h1 style="text-align: center;">$ 231,000</h1>
+                    <!-- <mat-card-header>
+                        <mat-card-title class="cardTitle" style="text-align: center; margin-left: 30px;">$ 231,000</mat-card-title>
+                     </mat-card-header> -->
+
+                </mat-card>
+            </div>
+            <div fxFlex="23%">
+                <mat-card class="mat-elevation-z8" style="background-color: #f3da69;border: 1px solid #43434366;">
+
+                    <p style="text-align: center;">
+                        Total Premiums Paid
+                    </p>
+                    <h1 style="text-align: center;">$ 185,000</h1>
+                    <!-- <mat-card-header>
+                        <mat-card-title class="cardTitle" style="text-align: center; margin-left: 27%;">$&nbsp;185,000</mat-card-title>
+                    
+                    </mat-card-header> -->
+
+                </mat-card>
+            </div>
+            <div fxFlex="23%">
+                <mat-card class="mat-elevation-z8" style="background-color: #f3da69;border: 1px solid #43434366;">
+
+                    <p style="text-align: center;">
+                        Total Amount Withdrawan
+                    </p>
+                    <h1 style="text-align: center;">$ 26,000</h1>
+                    <!-- <mat-card-header>
+                        <mat-card-title class="cardTitle" style="text-align: center; margin-left: 40px;">$ 26,000</mat-card-title>
+                     </mat-card-header> -->
+
+                </mat-card>
+            </div>
+            <div fxFlex="30%">
+                <mat-card class="mat-elevation-z8" style="background-color: #f3da69;border: 1px solid #43434366;">
+
+                    <p style="text-align: center;">
+                        Surrender Charge Free Amount
+                    </p>
+                    <h1 style="text-align: center;">$ 5,600</h1>
+                    <!-- <mat-card-header>
+                        <mat-card-title class="cardTitle" style="text-align: center; margin-left: 45px;">$ 5,600</mat-card-title>
+                     </mat-card-header> -->
+                </mat-card>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="content" *ngIf="addmorenom==true">
+
+        <div fxLayout="row wrap" fxLayoutGap="20px grid">
+            <div fxFlex="26%">
+                <h2>Services</h2>
+                <p class="drop">Request policy and benefit statement</p>
+                <p class="drop">View your documents</p>
+                <p class="drop">View my history of fees charged</p>
+                <p class="drop">Request policy and benefit statement</p>
+                <h2>Financial planning tools</h2>
+                <p class="drop">Request policy and benefit statement</p>
+                <p class="drop">View your documents</p>
+                <p class="drop">View my history of fees charged</p>
+                <p class="drop">Request policy and benefit statement</p>
+            </div>
+            <div fxFlex="24%">
+                <h2>Changes to my plan</h2>
+                <p class="drop">Changes policy benefits</p>
+                <p class="drop">Make a death beneficiary (nominee) change</p>
+                <p class="drop">Reinstate policy</p>
+                <p class="drop">Increase or decease life cover</p>
+                <p class="drop">Report a life event</p>
+                <p class="drop">Change my retirement age</p>
+
+            </div>
+            <div fxFlex="25%">
+                <h2>Money management service</h2>
+                <p class="drop">Set up payment instruction</p>
+                <p class="drop">Make a purchase payment</p>
+                <p class="drop">Change purchase payment allocations</p>
+                <p class="drop">Increase or decease life cover</p>
+                <p class="drop">View your transaction history</p>
+                <p class="drop">View your purchase payment history</p>
+                <p class="drop">View my pending orders</p>
+                <p class="drop">Change rebalancing instructions</p>
+            </div>
+            <div fxFlex="25%">
+                <h2>Benefits management service</h2>
+                <p class="drop">Set up regular withdrawals</p>
+                <p class="drop">Surrender policy</p>
+                <p class="drop">Switch to income phase</p>
+                <h2>Feedback</h2>
+                <p class="drop">Register expression of dissatisfaction</p>
+                <p class="drop">Make a complaint</p>
+                <p class="drop">Make a general enquiry</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="content">
+    <div fxLayout="row wrap">
+        <div fxFlex="32.5%">
+            <h2>Features</h2>
+            <p>Policy start date<br>
+                <span>8/15/2021</span>
+            </p>
+            <p>Next policy anniversary date<br>
+                <span>8/15/2031</span>
+            </p>
+            <p>Ownership<br>
+                <span>Joint</span>
+            </p>
+            <p>Number of covered persons<br>
+                <span>2</span>
+            </p>
+            <p>Beneficiaries<br>
+                <span>Mr James Willam</span>
+            </p>
+            <p>Phase<br>
+                <span>Accumulation</span>
+            </p>
+            <p>Asset allocation models<br>
+                <span>Variable portfolio</span>
+            </p>
+            <p>Auto rebalance investments<br>
+                <span>Yes</span>
+            </p>
+            <p>Frequency of auto rebalance<br>
+                <span>Quartely</span>
+            </p>
+            <p>Annuitized options<br>
+                <span>Guaranteed</span>
+            </p>
+            <p>Death benefit<br>
+                <span>Return of Purchase Payment Death benefit</span>
+            </p>
+        </div>
+        <div fxFlex="32.5%">
+            <h2>Contributions and withdrawals</h2>
+            <p>Initial purchase payment<br>
+                <span>$ 10,000</span>
+            </p>
+            <p>Regular purchase payment<br>
+                <span>$ 500</span>
+            </p>
+            <p>Latest purchase payment<br>
+                <span>$ 500</span>
+            </p>
+            <p>Systematic withdrawal<br>
+                <span>Yes</span>
+            </p>
+            <p>Minimum withdrawal amount<br>
+                <span>$ 1000</span>
+            </p>
+            <p>Latest withdrawal<br>
+                <span>N/A</span>
+            </p>
+
+
+            <h2>Riders</h2>
+            <p>Return of premium death benefit<br>
+                <span>Yes</span>
+            </p>
+            <p>Additional death benefit riders<br>
+                <span>Yes</span>
+            </p>
+            <p>Living benefits rider<br>
+                <span>Yes</span>
+            </p>
+            <p>Waiver of premium<br>
+                <span>Yes</span>
+            </p>
+
+        </div>
+        <div fxFlex="31%">
+            <h2>Fees and charges</h2>
+            <p>Annual policy fee<br>
+                <span>0.4 %</span>
+            </p>
+            <p>Fund facilitation fees<br>
+                <span>0.22% to 1.7% of underlying funds</span>
+            </p>
+            <p>Mortality & expense & admin charges<br>
+                <span>01/10/1900</span>
+            </p>
+            <p>Surrender charge<br>
+                <span>$ 25</span>
+            </p>
+            <p>Transfer charge<br>
+                <span>$ 25 after 10 transfers</span>
+            </p>
+            <p>Premium tax<br>
+                <span>1/10/2025</span>
+            </p>
+            <p>Rider charges<br>
+                <span>Various (see details)</span>
+            </p>
+
+
+
+        </div>
+    </div>
+</div>
+
+<div class="mat-elevation-z8">
+    <div class="content">
+        <h2>Investments</h2>
+        <h3 style="margin-left: 1%;">Your Variable Annuities is invested into the following funds .To check full range and their performance <span
+                style="color: blue; cursor: pointer;"><u>Click Here</u></span></h3>
+        <div fxLayout="row wrap" fxLayoutGap="20px grid">
+
+            <div fxFlex="40%">
+
+                <img src="../../../../assets/images/Variable_Annuities.png" width="400px"
+                    style="margin-left: 0px;margin-top: 50%;">
+            </div>
+            <div fxFlex="60%">
+                <h4 style="margin-left: 75%;">Currency in Dollar $</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col"></th>
+                            <th scope="col">Sell Price (c)</th>
+                            <th scope="col">Unit</th>
+                            <th scope="col">You paid</th>
+                            <th scope="col">Current value </th>
+                            <th scope="col">Change in value </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th style="font-size: 16px;">A. Fixed Account</th>
+                            <td>N/A</td>
+                            <td>1</td>
+                            <td>25,341.35</td>
+                            <td>30,275.32</td>
+                            <td>4,933.97</td>
+                        </tr>
+                        <tr>
+                            <th style="font-size: 16px;">B. Variable Portfolio</th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 16px;">Franklin income Fund</td>
+                            <td>1,235.98</td>
+                            <td>865</td>
+                            <td>6,753.00</td>
+                            <td>10,691.23</td>
+                            <td>3,938.23</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 16px;">Templeton Balance <br>Portfolio</td>
+                            <td>3,456.52</td>
+                            <td>2120</td>
+                            <td>66,876.32</td>
+                            <td>73,278.22</td>
+                            <td>6,401.90</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 16px;">JP Morgan Core Bond<br>Portfolio</td>
+                            <td>1,493.35</td>
+                            <td>345</td>
+                            <td>8,338.22</td>
+                            <td>5,048.56</td>
+                            <td>-3,289</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 16px;">Pinewood High Yield<br> Bond</td>
+                            <td>1689.11</td>
+                            <td>832</td>
+                            <td>16,345.35</td>
+                            <td>14,053.38</td>
+                            <td>-2,291.97</td>
+                        </tr>
+                        <tr>
+                            <td style="font-size: 16px;">Goldman Money <br> Market Funds</td>
+                            <td>2,436.32</td>
+                            <td>2750</td>
+                            <td>61,345</td>
+                            <td>66,998.80</td>
+                            <td>5,653.04</td>
+
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th style="font-size: 16px;">Total-Variable<br> Portfolio</th>
+                            <td></td>
+                            <td></td>
+                            <td>159,658.65</td>
+                            <td>170,070.18</td>
+                            <td>10,411.53</td>
+                        </tr>
+                        <tr>
+                            <th style="font-size: 16px;">Total-overall</th>
+                            <td></td>
+                            <td></td>
+                            <td>185,000</td>
+                            <td>200,345.50</td>
+                            <td>15,345.50</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <Div>
+                    <button mat-raised-button color="primary">Switch Funds</button>
+                    <button mat-raised-button color="primary" style="margin-left: 2%;">Contribution History</button>
+                </Div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<br>

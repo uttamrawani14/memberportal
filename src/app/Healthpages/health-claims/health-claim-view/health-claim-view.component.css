@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+.box1 {
+    border: 1px solid #43434366;
+    margin-top: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+}
+
+.heading {
+    display: inline-block;
+    padding-top: 25px;
+    margin-left: 8px;
+}
+
+.top4card {
+    width: 180px;
+    height: 120px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.formCard {
+    height: auto;
+    margin-left: 40px;
+}
+
+.content {
+    padding: 10px;
+    padding-left: 20px;
+    padding-bottom: 0px;
+}
+
+.container1 {
+    font-size: 20px;
+    text-align: left;
+    margin-left: 40px;
+    font-weight: bold;
+    color: gray;
+}
+
+.container2 {
+    font-size: 15px;
+    text-align: left;
+    margin-left: 40px;
+    color: gray;
+    opacity: 0.8;
+}
+
+p {
+    color: rgb(67, 68, 68);
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.checks {
+    margin-left: 60px;
+    display: inline-block;
+}
+
+.cardtitle {
+    color: #ffcc00;
+}
+
+.firstForm {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+}
+
+html {
+    background-color: #ecf9ff;
+}
+
+@media (max-width: 600px) {
+    mat-card {
+        min-width: 410px;
+        margin-right: 20%;
+    }
+}
+
+.icons {
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.uploads {
+    color: #ffcc00;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+.btn1 {
+    width: 15%;
+    margin-left: 30%;
+    background: rgba(255, 204, 0, 0.6);
+}
+
+.btn2 {
+    width: 15%;
+    margin-left: 10%;
+}
+
+.btn1:hover {
+    background-color: #ffcc00;
+}
+
+.btn2:hover {
+    background: rgba(67, 68, 68, 0.1);
+}

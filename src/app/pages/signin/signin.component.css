@@ -1,0 +1,141 @@
+/* 
+.grid{
+    background-color: #1C295A09;
+  }
+  .mat-grid-tile .mat-figure {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58%;
+    padding: 0;
+    margin: 0;
+  }
+  .controles-container{
+    width: 100%;
+    padding: 8%;
+    padding-top: 20%;
+    padding-left: 10%;
+    }
+  form{
+    width:80%;
+  }
+  .controles-container >*{
+    width:100%;
+  }
+  .btn{
+    width: 80%;
+    margin-left: 11%;
+    margin-top: 2%;
+    background-color: #0D73BB;
+    color: white;
+  }
+  .btn1{
+    width: 50%;
+    margin-left: 27%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    background-color: #1C295A09;
+    color: black;
+  }
+  p{
+    margin-left: 40%;
+    color:silver;
+  }
+  .mat-elevation-z8{
+    border-radius: 5px;
+  }
+  a{
+    margin-left:37% ;
+  }
+  .controles-container {
+    width: 100%;
+    padding: 5%;
+    padding-top: 5%;
+    padding-left: 10%;
+  }
+   */
+
+   *{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    background-size: cover;
+}
+    .container1{
+       
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../../../assets/images/background.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+.row1{
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+
+.col1{
+    flex-basis: 50%;
+    margin-left: 10%;
+}
+hr{
+  width: 100px;
+  border: 1px solid #ffca28;
+  border-radius: 5px;
+}
+.col2{
+    margin-top: 7%;
+    flex-basis: 50%;
+}
+
+h1{
+    color: #fff;
+    font-size: 30px;
+}
+
+    p{
+        color: white;
+    }
+  
+    .card1{
+        width: 400px;
+        height: 350px;
+        display: inline-block;
+        border-radius: 10px;
+        padding: 15px 25px;
+        box-sizing: border-box;
+        cursor: pointer;
+        margin:10px 15px;
+        margin-left: 20%;
+        background-position: center;
+        background-size: cover; 
+    }
+h3{
+  color: gray;
+}
+    .btn{
+      width: 100%;
+      margin-top: 2%;
+      color: rgb(39, 28, 28);
+    }
+
+    .btn1{
+      width: 50%;
+      margin-left: 27%;
+      margin-top: 2%;
+      margin-bottom: 5%;
+      background-color: #1C295A09;
+      color: black;
+    }
+
+.card2{
+ background-color: white;
+}
+

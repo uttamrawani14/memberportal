@@ -1,0 +1,43 @@
+
+
+.cards{
+    width: 75%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px ,1fr));
+    grid-gap: 30px;
+}
+
+.card{
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    /* border-color: #ffe082; */
+    background-color: #ffe082;;
+    
+}
+
+.abc{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 2%;
+}
+
+.content{
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+/* .content a{
+    margin-top: 10px;
+    text-decoration: none;
+    display: inline-block;
+    background-color: #ffd54f;
+    color: #000000;
+    font-size: 20px;
+    padding: 5px 18px;
+    border-radius:40px ;
+} */
+h1{
+  color: black;
+}

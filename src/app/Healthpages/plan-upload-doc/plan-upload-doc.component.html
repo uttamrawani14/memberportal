@@ -1,0 +1,42 @@
+<div>
+    <h3>Upload Documents</h3>
+</div>
+
+
+<div>
+    <mat-form-field style="width: 100%;">
+        <mat-label>Category</mat-label>
+        <mat-icon matSuffix> attach_file</mat-icon>
+        <mat-select>
+            <mat-option value="preauth">Preauth</mat-option>
+            <mat-option value="consultation">Consultation</mat-option>
+
+        </mat-select>
+    </mat-form-field>
+</div>
+
+
+<mat-card>
+    <mat-card-content>
+        <div>
+            <mat-toolbar>
+                <!-- Display files names -->
+                <input matInput [(ngModel)]="fileAttr" readonly name="name" />
+
+                <!-- Browse Button -->
+                <button mat-raised-button color="primary" style="width: 40%;border-radius: 35px;">
+                  Browse Files
+                </button>
+            </mat-toolbar>
+            <input type="file" #fileInput id="uploadFile" (change)="uploadFileEvt($event)" name="uploadFile" multiple="multiple" accept="image/*" />
+        </div>
+        <div><img src="{{dataimage}}" width="300px"></div>
+
+    </mat-card-content>
+</mat-card>
+
+
+<div mat-dialog-actions>
+    <button mat-raised-button (click)="onNoClick()" class="btn2" style="margin-left: 130px;width: 20%;">Reset</button>
+    <button mat-raised-button color="primary" [mat-dialog-close] class="btn1" style="margin-left: 50px;width: 20%;">Upload</button>
+</div>

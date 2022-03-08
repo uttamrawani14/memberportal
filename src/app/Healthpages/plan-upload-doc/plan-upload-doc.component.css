@@ -1,0 +1,35 @@
+mat-grid-tile {
+    background: lightblue;
+}
+
+#uploadFile {
+    position: absolute;
+    z-index: 9;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+.btn1 {
+    width: 20%;
+    margin-left: 130px;
+    background: rgba(255, 204, 0, 0.6);
+    display: inline-block;
+}
+
+.btn2 {
+    width: 20%;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.btn1:hover {
+    background-color: #ffcc00;
+}
+
+.btn2:hover {
+    background: rgba(67, 68, 68, 0.1);
+}

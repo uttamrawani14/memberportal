@@ -1,0 +1,104 @@
+<div class="heading">
+    Welcome Mr Uttam!
+    <button mat-raised-button class="btn1" style="margin-left: 400px;border-radius: 35px;" routerLink="/Health/consult"><img src="../../../../assets/images/927959-200.png" width="20px"> Book a Consultation </button>
+    <button mat-raised-button class="btn1" style="margin-left: 15px;border-radius: 35px;" routerLink="/Health/locate"><img src="../../../../assets/images/street-view-doll.png" width="20px"> Locate Network Hospital </button>
+</div>
+<mat-grid-list cols="6" rowHeight="135px" gutterSize="15px">
+    <mat-grid-tile [colspan]="4" [rowspan]="2">
+        <mat-card class="mat-elevation-z8">
+            <mat-card-header>
+                <mat-card-title>Policy Information</mat-card-title>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <div style="padding: 2px;">
+                    <div fxLayout="row wrap" fxLayoutGap="5px grid">
+                        <div fxFlex="40%" style="margin-top: 25px;">
+                            <p class="pTexts">Sum Insured : <span class="sTexts">$ 200,000</span></p>
+                            <p class="pTexts">Policy Number : <span class="sTexts">567837</span></p>
+                            <p class="pTexts">Plan Name : <span class="sTexts">Active Health Enhanced</span></p>
+                            <p class="pTexts">Policy Renewal Date : <span class="sTexts">22/11/2021</span></p>
+                            <br>
+                            <button mat-raised-button class="btn1" style="margin-left: 10px;" routerLink="/Health/policy">View Details</button>
+
+                        </div>
+                        <div fxFlex="50%" style="margin-left: 60px;">
+                            <app-healthdonut></app-healthdonut>
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="2" [rowspan]="2">
+        <mat-card class="mat-elevation-z8">
+            <mat-card-header>
+                <mat-card-title>Your Profile</mat-card-title>
+                <p class="viewProfile" routerLink="/Health/profile">View Details</p>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <div><img src="../../../../assets/images/Daco_5511364.png" width="85px" style="margin-left: 40%;padding-top: 15px;"></div>
+            <mat-card-content>
+                <div class="content">
+                    <div fxLayout="row wrap" fxLayoutGap="5px grid">
+                        <div fxFlex="45%" style="margin-top: 20px;">
+                            <p class="pTexts2">Member Id : <span class="sTexts2">87957</span></p>
+                            <p class="pTexts2">Name : <span class="sTexts2">Uttam Kumar</span></p>
+                            <p class="pTexts2">DOB : <span class="sTexts2">22/05/1972</span></p>
+                        </div>
+
+                        <div fxFlex="55%" style="margin-top: 20px;">
+                            <p class="pTexts2">Gender : <span class="sTexts2">Male</span></p>
+                            <p class="pTexts2">Contact : <span class="sTexts2">+15195736870</span></p>
+                            <p class="pTexts2">Age : <span class="sTexts2">49</span></p>
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="4" [rowspan]="2">
+        <mat-card class="mat-elevation-z8">
+            <mat-card-header>
+                <mat-card-title>Our New Recommended Products</mat-card-title>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <div style="margin-top: 20px;">
+                    <p class="pTexts">90% of people bought this plan along with current plan <span class="links" style="margin-left: 95px;">Click here to view details</span></p>
+                    <p class="pTexts" style="font-size: 20px;color: black;">Cover your loved ones under new plans</p>
+                    <button mat-raised-button class="two forbtn">Critical Illness</button>
+                    <p class="two links">Click here to view details</p>
+                    <br>
+                    <mat-divider class="divider"></mat-divider>
+                    <br>
+                    <button mat-raised-button class="two forbtn">Family Floater</button>
+                    <p class="two links">Click here to view details</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="2">
+        <mat-card class="mat-elevation-z8">
+            <mat-card-header>
+                <mat-card-title>Quick Links</mat-card-title>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <div style="margin-top: 20px;">
+                    <p class="links2">Download E-Card</p>
+                    <p class="links2">Renewal Policy</p>
+                    <p class="links2">Cancel Policy</p>
+                    <p class="links2">File a claim</p>
+                    <p class="links2">Active claim</p>
+                    <p class="links2">Download Claim Form</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+<br>

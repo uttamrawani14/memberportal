@@ -1,0 +1,331 @@
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="20px grid">
+        <div fxFlex="24%" style="margin-left: 15px;">
+            <mat-card routerLink="/Health/claims" class="top4card mat-elevation-z8" style="background-color: #f3da69;">
+                <p>
+                    <mat-icon class="icons">description</mat-icon>
+                </p>
+                <p>Plan Hospitalization</p>
+            </mat-card>
+        </div>
+        <div fxFlex="24%">
+            <mat-card class="top4card mat-elevation-z8" style="background-color: #f3da69;">
+                <p>
+                    <mat-icon class="icons">assignment</mat-icon>
+                </p>
+                <br>
+                <p>File a Claim</p>
+            </mat-card>
+        </div>
+        <div fxFlex="24%">
+            <mat-card routerLink="/Health/claimStatus" class="top4card mat-elevation-z8" style="background-color: #f3da69;">
+                <p>
+                    <mat-icon class="icons">restore_page</mat-icon>
+                </p>
+                <br>
+                <p>Claim Status</p>
+            </mat-card>
+        </div>
+        <div fxFlex="24%">
+            <mat-card class="top4card mat-elevation-z8" style="background-color: #f3da69">
+                <p>
+                    <mat-icon class="icons">headset_mic</mat-icon>
+                </p>
+                <br>
+                <p>Claim Helpdesk</p>
+            </mat-card>
+        </div>
+    </div>
+</div>
+<div style="margin-top: 30px;">
+    <p class="container1">We've got you covered with all safety!</p>
+    <p class="container2">Easy claims process to make sure you focus on the care you desire.</p>
+</div>
+<div class="content">
+    <div fxLayout="row wrap">
+        <div fxFlex="40%">
+            <mat-form-field appearance="outline" style="padding-bottom: 0px;margin-left: 20px;">
+                <mat-label>Policy Number</mat-label>
+                <mat-select>
+                    <mat-option value="pl123">PL123</mat-option>
+                    <mat-option value="pl456">PL456</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div fxFlex="40%">
+            <mat-form-field appearance="outline" style="padding-bottom: 0px;margin-left: 20px;">
+                <mat-label>Member Id</mat-label>
+                <mat-select>
+                    <mat-option value="mi123">MI123</mat-option>
+                    <mat-option value="mi456">MI456</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+
+    </div>
+</div>
+<mat-grid-list cols="4" rowHeight="150px">
+    <mat-grid-tile [colspan]="4" [rowspan]="2">
+        <form>
+            <mat-card class="mat-elevation-z8 formCard" style="width: 90%;">
+                <mat-card-header>
+                    <mat-card-title class="cardtitle">Insured Details</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <div class="content">
+                        <div fxLayout="row wrap">
+                            <div fxFlex="32%" style="margin-left: 20px;">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 90%;">
+                                    <mat-label>Name</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="32%">
+                                <mat-form-field appearance="outline" style="width: 90%;">
+                                    <mat-label>Gender</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="32%">
+                                <mat-form-field appearance="outline" style="width: 90%;">
+                                    <mat-label>Age</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div fxLayout="row wrap" fxLayoutGap="20px grid">
+                            <div fxFlex="25%" style="margin-left: 20px;">
+                                <mat-form-field appearance="outline" style="width: 105%;">
+                                    <mat-label>Address Line 1</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="21%">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 100%;margin-left: 15px;">
+                                    <mat-label>City</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="21%">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 100%;margin-left: 25px;">
+                                    <mat-label>State</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="21%">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 100%;margin-left: 40px;">
+                                    <mat-label>Postal Code</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div fxLayout="row wrap">
+                            <div fxFlex="95%" style="margin-left: 30px;">
+                                <p class="firstForm">Relationship to primary insured</p>
+                                <section class="checks">
+                                    <mat-checkbox style="margin-left: 50px;">Self</mat-checkbox>
+                                    <mat-checkbox style="margin-left: 50px;">Spouse</mat-checkbox>
+                                    <mat-checkbox style="margin-left: 50px;">Child</mat-checkbox>
+                                    <mat-checkbox style="margin-left: 50px;">Others</mat-checkbox>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </form>
+    </mat-grid-tile>
+</mat-grid-list>
+<br>
+<mat-grid-list cols="4" rowHeight="170px">
+    <mat-grid-tile [colspan]="4" [rowspan]="2">
+        <form>
+            <mat-card class="mat-elevation-z8 formCard" style="width: 128%;">
+                <mat-card-header>
+                    <mat-card-title class="cardtitle">Hospital Information</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <!-- <div class="content">
+                        <div fxLayout="row wrap">
+                            <div fxFlex="100%" style="margin-left: 30px;">
+                                <p class="firstForm">Hospital Type</p>
+                                <mat-radio-group color="primary" aria-label="Select an option">
+                                    <mat-radio-button class="checks" value="1">Network</mat-radio-button>
+                                    <mat-radio-button class="checks" value="2">Non Network</mat-radio-button>
+                                </mat-radio-group>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="content">
+                        <div fxLayout="row wrap">
+                            <div fxFlex="32%" style="margin-left: 20px;">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 90%;">
+                                    <mat-label>Hospital Name</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="32%">
+                                <mat-form-field appearance="outline" style="width: 90%;">
+                                    <mat-label>Hospital Address</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="32%">
+                                <mat-form-field appearance="outline" style="width: 90%;">
+                                    <mat-label>State</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div fxLayout="row wrap">
+                            <div fxFlex="32%" style="margin-left: 20px;">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 90%;">
+                                    <mat-label>Hospital Phone No.</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="32%">
+                                <mat-form-field appearance="outline" style="width: 90%;">
+                                    <mat-label>Hospital Fax No.</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="32%">
+                                <mat-form-field appearance="outline" style="width: 90%;">
+                                    <mat-label>Doctor Name</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div fxLayout="row wrap">
+                            <div fxFlex="32%" style="margin-left: 20px;">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 90%;">
+                                    <mat-label>Room Number/Category</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card-content>
+            </mat-card>
+        </form>
+    </mat-grid-tile>
+</mat-grid-list>
+<br>
+<mat-grid-list cols="4" rowHeight="230px">
+    <mat-grid-tile [colspan]="4" [rowspan]="2">
+        <form>
+            <mat-card class="mat-elevation-z8 formCard" style="width: 117%;">
+                <mat-card-header>
+                    <mat-card-title class="cardtitle">Admission Information</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <div class="content">
+                        <div fxLayout="row wrap">
+                            <div fxFlex="32%" style="margin-left: 20px;">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 90%;">
+                                    <mat-label>Reason for Admission</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="32%">
+                                <mat-form-field appearance="outline" style="width: 90%;">
+                                    <mat-label>DOA</mat-label>
+                                    <input matInput [matDatepicker]="picker">
+                                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker></mat-datepicker>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="32%">
+                                <mat-form-field appearance="outline" style="width: 90%;">
+                                    <mat-label>DOD</mat-label>
+                                    <input matInput [matDatepicker]="picker1">
+                                    <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                                    <mat-datepicker #picker1></mat-datepicker>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div fxLayout="row wrap" fxLayoutGap="20px grid">
+                            <div fxFlex="45%" style="margin-left: 20px;">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 100%;">
+                                    <mat-label>Primary Diagnosis</mat-label>
+                                    <mat-label style="margin-left: 120px;">ICD 10 code</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="45%" style="margin-left: 20px;">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 100%;">
+                                    <mat-label>Procedure</mat-label>
+                                    <mat-label style="margin-left: 170px;">ICD 10 PCS</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div fxLayout="row wrap" fxLayoutGap="20px grid">
+                            <div fxFlex="45%" style="margin-left: 20px;">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 100%;">
+                                    <mat-label>Additional Diagnosis</mat-label>
+                                    <mat-label style="margin-left: 110px;">ICD 10 code</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="45%" style="margin-left: 20px;">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 100%;">
+                                    <mat-label>Procedure</mat-label>
+                                    <mat-label style="margin-left: 170px;">ICD 10 PCS</mat-label>
+                                    <input matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <div fxLayout="row wrap" fxLayoutGap="20px grid">
+                            <div fxFlex="32%" style="margin-left: 20px;">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 90%;">
+                                    <mat-label>Hospitalization Expenses (INR)</mat-label>
+                                    <input type="number" matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="32%">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 90%;">
+                                    <mat-label>Ambulance Expenses (INR)</mat-label>
+                                    <input type="number" matInput>
+                                </mat-form-field>
+                            </div>
+                            <div fxFlex="32%">
+                                <mat-form-field appearance="outline" style="padding-bottom: 0px;width: 90%;">
+                                    <mat-label>Total Expenses (INR)</mat-label>
+                                    <input type="number" matInput>
+                                </mat-form-field>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="margin-left: 90%;padding-bottom: 10px;">
+                        <mat-icon matTooltip="Upload document" class="uploads" (click)="openDialog()">add_circle</mat-icon>
+                    </div>
+
+                </mat-card-content>
+            </mat-card>
+        </form>
+    </mat-grid-tile>
+</mat-grid-list>
+<br>
+<div>
+    <button mat-raised-button class="btn1">Submit</button>
+    <button mat-raised-button class="btn2">Cancel</button>
+</div>
+<br>

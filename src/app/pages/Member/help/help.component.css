@@ -1,0 +1,17 @@
+
+  mat-card {
+    width: 100%;
+    border: 1px solid #43434366;
+}
+.mat-card .mat-divider-horizontal {
+    position: absolute;
+    left: 0;
+    width: 90%;
+    margin-left: 5%;
+    color: black;
+    border-top-width: 1.5px;
+}
+mat-form-field{
+    width: 100%;
+}
+

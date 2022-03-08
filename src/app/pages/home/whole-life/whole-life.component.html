@@ -1,0 +1,280 @@
+<br>
+<div class="mat-elevation-z8" style="border: 1px solid #43434366;">
+  
+   <div class="content">
+       <div fxLayout="row wrap" fxLayoutGap="20px grid">
+           <div fxFlex="5%">
+            <img src="../../../../assets/images/insurance (1).png" width="40px" style="margin-left: 2%; margin-top: 2%;">
+           </div>
+           <div fxFlex="82.5%">
+            <p style="margin-left: 2%; font-weight: 500;">Whole Life<br>
+                (WL9999123)</p>
+           </div>
+           <div fxFlex="10%">
+            <button mat-button color="accent" *ngIf="show==false" (click)="openDialog()" >Manage <mat-icon >list</mat-icon></button>
+            <button mat-button color="accent" *ngIf="addmorenom==true" (click)="openDialog1()" >Manage <mat-icon >list</mat-icon></button>   
+           </div>
+       </div>
+   </div>
+<div class="content" *ngIf="show==false">
+    <div fxLayout="row wrap" fxLayoutGap="20px grid">
+        <div fxFlex="25%">
+            <mat-card class="mat-elevation-z8" style="background-color:#f3da69;border: 1px solid #43434366;">
+                    <mat-card-content class="cardContent">
+                        <p style="text-align: center;">
+                            Cash Value
+                        </p>
+                    </mat-card-content>
+                    <mat-card-header>
+                        <mat-card-title class="cardTitle" style="text-align: center; margin-left: 20px;">$&nbsp;190,350</mat-card-title>
+                     </mat-card-header>
+                
+            </mat-card>
+        </div>
+        <div fxFlex="25%">
+            <mat-card class="mat-elevation-z8" style="background-color: #f3da69;border: 1px solid #43434366;">
+                    <mat-card-content class="cardContent">
+                        <p style="text-align: center;">
+                           Policy loan
+                        </p>
+                    </mat-card-content>
+                    <mat-card-header>
+                        <mat-card-title class="cardTitle" style="margin-left: 46px;">$ 1,930</mat-card-title>
+                     </mat-card-header>
+               
+            </mat-card>
+        </div>
+        <div fxFlex="25%">
+            <mat-card class="mat-elevation-z8" style="background-color: #f3da69;border: 1px solid #43434366;">
+                    <mat-card-content class="cardContent">
+                        <p style="text-align: center;">
+                            Face Amount
+                        </p>
+                    </mat-card-content>
+                    <mat-card-header>
+                        <mat-card-title class="cardTitle" style="text-align: center; margin-left: 25px;">$&nbsp;250,000</mat-card-title>
+                     </mat-card-header>
+               
+            </mat-card>
+        </div>
+        <div fxFlex="25%">
+            <mat-card class="mat-elevation-z8" style="background-color: #f3da69;border: 1px solid #43434366;">
+                    <mat-card-content class="cardContent">
+                        <p style="text-align: center;">
+                            Cash Surrender Value
+                        </p>
+                    </mat-card-content>
+                    <mat-card-header>
+                        <mat-card-title class="cardTitle" style="text-align: center; margin-left: 30px;">$&nbsp;171,050</mat-card-title>
+                     </mat-card-header>
+               
+            </mat-card>
+        </div>
+       
+        
+    </div>
+    </div>
+    <div class="content" *ngIf="addmorenom==true">
+   
+        <div fxLayout="row wrap" fxLayoutGap="20px grid">
+            <div fxFlex="26%">
+               <h2>Services</h2>
+               <p class="drop">Request policy and benefit statement</p> 
+               <p class="drop">View your documents</p> 
+               <p class="drop">View my history of fees charged</p> 
+               <p class="drop">Request policy and benefit statement</p> 
+               <h2>Financial planning tools</h2>
+               <p class="drop">Request policy and benefit statement</p> 
+               <p class="drop">View your documents</p> 
+               <p class="drop">View my history of fees charged</p> 
+               <p class="drop">Request policy and benefit statement</p> 
+            </div>
+            <div fxFlex="24%">
+                <h2>Changes to my plan</h2>
+               <p class="drop">Changes policy benefits</p> 
+               <p class="drop">Make a death beneficiary (nominee) change</p> 
+               <p class="drop">Reinstate policy</p> 
+               <p class="drop">Increase or decease life cover</p> 
+               <p class="drop">Report a life event</p>
+               <p class="drop">Change my retirement age</p>
+               
+            </div>
+            <div fxFlex="25%">
+                <h2>Money management service</h2>
+               <p class="drop">Set up payment instruction</p> 
+               <p class="drop">Make a purchase payment</p> 
+               <p class="drop">Change purchase payment allocations</p> 
+               <p class="drop">Increase or decease life cover</p> 
+               <p class="drop">View your transaction history</p>
+               <p class="drop">View your purchase payment history</p>
+               <p class="drop">View my pending orders</p>
+               <p class="drop">Change rebalancing instructions</p>
+            </div>
+            <div fxFlex="25%">
+                <h2>Benefits management service</h2>
+               <p class="drop">Set up regular withdrawals</p> 
+               <p class="drop">Surrender policy</p> 
+               <p class="drop">Switch to income phase</p> 
+               <h2>Feedback</h2>
+               <p class="drop">Register expression of dissatisfaction</p> 
+               <p class="drop">Make a complaint</p>
+               <p class="drop">Make a general enquiry</p>
+            </div>
+            
+        </div>
+        </div>
+   </div>
+<br>
+   <div class="content">
+       <div fxLayout="row wrap">
+           <div fxFlex="32.5%">
+               <h2>Features</h2>
+               <p>Policy start date<br>
+                <span>8/15/2021</span>
+                </p>
+                <p>Next Policy anniversary date<br>
+                    <span>8/15/2031</span>
+                    </p>
+                <p>Ownership<br>
+                    <span>Joint</span> </p>
+                    <p>Number of covered persons<br>
+                        <span>2</span> </p>
+                        <p>Beneficiaries<br>
+                            <span>Mr James Willam</span> </p>
+                            <p>Non-forfeiture<br>
+                                <span>Yes</span> </p>
+                                <p>Back dating allowed<br>
+                                    <span>Yes</span> </p>
+                                    <p>Death benefit<br>
+                                        <span>Level</span> </p>
+                                            <p>Disbursement options<br>
+                                                <span>Lump sum / interest income / life income </span> </p>
+                                                
+           </div>
+           <div fxFlex="32.5%">
+            <h2>Contributions and withdrawals</h2>
+            <p>Premiums<br>
+             <span>$ 50</span>
+             </p>
+             <p>Next Premium due date<br>
+             <span>11/01/2022</span> </p>
+             <p>Premium frequency<br>
+                 <span>Monthly</span> </p>
+                 <p>Grace period for premiums<br>
+                     <span>30 days</span> </p>
+                     <p>Loan avaiable<br>
+                         <span>Fixed and variable</span> </p>
+                         <p>Loan charges<br>
+                             <span>Minimum rate - 3.5%</span><br>
+                             <span>Maximum rate - 9%</span></p>
+                                             
+        </div>
+        <div fxFlex="32.5%">
+            <h2>Fees and charges</h2>
+               <p>Cost of insurance<br>
+                <span>2%</span>
+                </p>
+                <p>Annual Policy Fee<br>
+                    <span>0.4%</span> </p>
+                    <p>Premium Expense Charge / load<br>
+                        <span>6%</span> </p>
+
+                        <h2>Riders</h2>
+                        <p>Accidental Death Benefit<br>
+                            <span>Yes</span> </p>
+                            <p>Chronic / critical illness Rider<br>
+                                <span>Yes</span> </p>
+                                <p>Terminal illness Rider<br>
+                                    <span>Yes</span> </p>
+                                    <p>LTC Rider<br>
+                                        <span>Yes</span> </p>
+                                        <p>Disability benefit rider<br>
+                                            <span>Yes</span> </p>
+                                            <p>Waiver of premium<br>
+                                                <span>Yes</span> </p>
+                           
+                    
+                                             
+        </div>
+       </div>
+   </div>
+
+   <div class="mat-elevation-z8">
+    <div class="content">
+        <h2>Investments</h2>
+        <h3 style="margin-left: 1%;">Your Whole life is invested into the following funds .To check full range of fund and their performance <span style="color: blue; cursor: pointer;"><u>Click Here</u></span></h3>
+        <div fxLayout="row wrap" fxLayoutGap="20px grid">
+  
+            <div fxFlex="50%">
+                
+                <img src="../../../../assets/images/Term-life.png" width="500px" style="margin-left: 0px;margin-top: 7%;">
+            </div>
+            <div fxFlex="50%">
+    
+<h4 style="margin-left: 73%;">Currency in Dollar $</h4>
+                <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Fund Name</th>
+                        <th scope="col">Sell Price (c)</th>
+                        <th scope="col">Unit</th>
+                        <th scope="col">You paid</th>
+                        <th scope="col">Current value </th>
+                        <th scope="col">Change in value </th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style="font-size: 16px;">Fidelity name</td>
+                        <td>277</td>
+                        <td>10</td>
+                        <td>2770</td>
+                        <td>3324</td>
+                        <td>554</td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 16px;">Fidelity Asia</td>
+                        <td>2375</td>
+                        <td>25</td>
+                        <td>59375</td>
+                        <td>61750</td>
+                        <td>2375</td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 16px;">Henderson US Growrh</td>
+                        <td>159</td>
+                        <td>45</td>
+                        <td>7155</td>
+                        <td>6360</td>
+                        <td>-795</td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 16px;">Investec Cautions</td>
+                        <td>821</td>
+                        <td>15</td>
+                        <td>12315</td>
+                        <td>16420</td>
+                        <td>4105</td>
+                      </tr>
+                      <tr>
+                        <td style="font-size: 16px;"></td>
+                        <td></td>
+                        <th>Total  Plan Value</th>
+                        <td>81615</td>
+                        <td>87854</td>
+                        <td>6239</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                  <Div>
+                    <button mat-raised-button color="primary">Switch Funds</button>
+                    <button mat-raised-button color="primary" style="margin-left: 2%;">Contribution History</button>
+                  </Div>
+                  
+
+            </div>
+            
+        </div>
+    </div>
+   </div>

@@ -1,0 +1,80 @@
+.heading {
+    font-size: 25px;
+    color: #ffcc00;
+    margin-top: 30px;
+    font-weight: 550;
+    margin-left: 10px;
+    padding-bottom: 0px;
+}
+
+.subheading {
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding-bottom: 0px;
+    opacity: 0.9;
+}
+
+.heading1 {
+    font-size: 15px;
+    color: #ffcc00;
+    margin-top: 5px;
+    text-align: center;
+    font-weight: 550;
+}
+
+.subHeadings {
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+.example-header-image {
+    background-image: url('../../../assets/images/pexels-gustavo-fring-4173239.jpg');
+    background-size: cover;
+}
+
+.example-header-image1 {
+    background-image: url('../../../assets/images/pexels-gustavo-fring-4173251.jpg');
+    background-size: cover;
+}
+
+.example-header-image2 {
+    background-image: url('../../../assets/images/renewIns.jpg');
+    background-size: cover;
+}
+
+.card1 {
+    margin-left: 5px;
+    width: 98%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.card2 {
+    margin-left: 4%;
+    width: 94%;
+    height: 90%;
+    border-radius: 15px;
+}
+
+.btn1 {
+    background: rgb(255, 204, 0, 0.6);
+    margin-top: 5px;
+    margin-left: 30%;
+    width: 35%;
+    border-radius: 35px;
+}
+
+.btn1:hover {
+    background: #ffcc00;
+}
+
+.btn2 {
+    background: rgb(255, 204, 0, 0.6);
+    width: 100%;
+    border-radius: 15px;
+}
+
+.btn2:hover {
+    background: #ffcc00;
+}

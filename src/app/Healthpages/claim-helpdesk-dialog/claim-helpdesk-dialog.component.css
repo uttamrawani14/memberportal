@@ -1,0 +1,39 @@
+.number {
+    color: #eb2127;
+}
+
+.heading1 {
+    font-size: 25px;
+    color: #ffcc00;
+    text-align: center;
+}
+
+.heading {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.subHeading {
+    color: gray;
+    padding-top: 10px;
+}
+
+mat-card {
+    border: 1px solid #ffcc00;
+}
+
+.btn1 {
+    background: rgba(255, 204, 0, 0.6);
+    margin-left: 40%;
+    width: 20%;
+}
+
+.btn1:hover {
+    background: #ffcc00;
+}
+
+.ruleLine {
+    width: 60%;
+    margin-left: 30%;
+    border-top-color: #ffcc00;
+}

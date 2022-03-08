@@ -1,0 +1,659 @@
+<h2 style="margin-top:0px ; margin-bottom:0px">Help Center</h2>
+<p style="margin-left:1%">Either Search or Browse our frequently asked questions. If you are not satisfied with the
+    answer, please write to us or chat with us .We are happy to help!</p>
+<mat-grid-list cols="7" rowHeight="179px" gutterSize="5px">
+    <mat-grid-tile [colspan]="5" [rowspan]="1">
+        <mat-card class="mat-elevation-z8">
+            <mat-card-header>
+                <mat-card-title>How can we help you?</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-form-field appearance="outline">
+                    <mat-label>Write your question here.....</mat-label>
+                    <input matInput placeholder="Search.....">
+                    <mat-icon matSuffix>search</mat-icon>
+                </mat-form-field>
+
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+        <mat-card class="mat-elevation-z8" style="background-color: #f3da69;">
+            <mat-card-header>
+                <mat-card-title>Useful Links</mat-card-title>
+            </mat-card-header>
+
+            <mat-card-content>
+                <p style="padding-top: 1%;"><span
+                        style="font-size: 20px; font-weight: 600;padding-top: 1%; ">✓&nbsp;</span><u
+                        style="cursor: pointer;">Fund Perforamances and Prices</u></p>
+                <p style="padding-top: 1%;"><span
+                        style="font-size: 20px; font-weight: 600;padding-top: 1%; cursor: pointer;">✓ </span><u
+                        style="cursor: pointer;">Insurance Form</u></p>
+                <p></p>
+            </mat-card-content>
+        </mat-card>
+
+    </mat-grid-tile>
+</mat-grid-list>
+<br>
+
+
+
+<div class="content">
+    <div fxLayout="row wrap" fxLayoutGap="5px grid">
+        <div fxFlex="70%">
+            <mat-card class="mat-elevation-z8">
+
+                <div>
+                    <button mat-raised-button color="primary" *ngIf="show==false" (click)="openDialog1()">Popular
+                        Question</button>
+                    <button mat-raised-button *ngIf="show==false" (click)="openDialog()" style="margin-left: 20px;">All
+                        Questions</button>
+                    <button mat-raised-button *ngIf="addmorenom==true" (click)="openDialog1()">Popular Question</button>
+                    <button mat-raised-button color="primary" *ngIf="addmorenom==true" (click)="openDialog()"
+                        style="margin-left: 20px;">All Questions</button>
+                </div>
+                <br>
+                <mat-card-content *ngIf="show==false">
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show7==false">
+                            <div (click)="openDialog12()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog12()" style="cursor:pointer;">add</mat-icon>
+                                    What is life insurance?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%;" *ngIf="addmorenom7==true">
+                            <div (click)="openDialog13()">
+                                <h3 style=" font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog13()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;Why should i buy life Insurance ?
+                                </h3>
+                                <h4>
+                                    Life insurance coverage is a means of protection from financial loss that could
+                                    occur due to the death of the insured individual. When you apply for your policy,
+                                    you designate “beneficiaries” - individuals or entities (such as a trust or estate)
+                                    to receive the payout of death benefit funds. In many cases, this money can be
+                                    critical to assisting the beneficiaries with household expenses, debt and other
+                                    financial obligations that your income previously supported.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show1==false">
+                            <div (click)="openDialog2()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog2()" style="cursor:pointer;">add</mat-icon>
+                                    Why should i buy life Insurance ?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%;" *ngIf="addmorenom1==true">
+                            <div (click)="openDialog3()">
+                                <h3 style=" font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog3()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;Why should i buy life Insurance ?
+                                </h3>
+                                <h4>
+                                    The most important reason to buy life insurance is to help establish a foundation of
+                                    financial security that could provide money to care for and support your dependents
+                                    (such as young children, non-working spouses or elderly parents) should you die.
+                                    Aside from dealing with grief in their loss, they also would have to manage through
+                                    any financial impact from your passing. Life insurance can be an important tool to:
+                                    <ul>
+                                        <li> Replace income for dependents: If family members depend on your income,
+                                            life insurance can replace that income or a portion of it to bridge a
+                                            financial gap in the household</li>
+                                        <li>Pay funeral expenses: Life insurance can help pay your funeral and burial
+                                            costs as well as any associated costs.</li>
+                                        <li>Fulfill debt obligations: Funds from life insurance can assist in paying
+                                            outstanding debts including credit cards, loans, mortgage and other similar
+                                            obligations.</li>
+                                        <li>Pay federal "death" taxes and state "death" taxes: Death benefit funds can
+                                            help cover potential estate taxes so that your heirs will not have to
+                                            liquidate other assets or take a smaller inheritance.</li>
+                                        <li>Create a source of savings: Certain types of life insurance accumulate a
+                                            cash value that can be borrowed or withdrawn by the policy owner while the
+                                            policy is in force.</li>
+                                    </ul>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show2==false">
+                            <div (click)="openDialog4()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog4()" style="cursor:pointer;">add</mat-icon>
+                                    What should i choose what type of life insurance to buy ?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom2==true">
+                            <div (click)="openDialog5()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog5()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;What should i choose what type of life insurance to buy ?
+                                </h3>
+                                <h4>
+                                    <br>
+                                    You should consider term life insurance if:
+                                    <br>
+                                    • You need life insurance protection for a specific period of time. Term life
+                                    coverage offers you the flexibility to align the amount of time you’ll need coverage
+                                    to the length of the term policy. For example, if you have young children and want
+                                    to ensure that - should you not be there to provide funds to pay for their education
+                                    or their care until they are grown, you might buy a 20-year term life policy. Or if
+                                    you need funds to repay a debt (such as a mortgage or school loans) within a
+                                    specific period of time (20-year loan), a term policy may be a good option for you.
+                                    <br>
+                                    • You have a limited budget but may need a higher amount of coverage to still
+                                    provide for those you leave behind, then term life may offer that balance.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show4==false">
+                            <div (click)="openDialog6()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog6()" style="cursor:pointer;">add</mat-icon>
+                                    What is the maximum amount of coverage I can currently apply for ?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom4==true">
+                            <div (click)="openDialog7()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog7()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;What is the maximum amount of coverage I can currently apply for ?
+                                </h3>
+                                <br>
+                                <h4>
+                                    U.S. citizen applicants under age 60 may apply for up to $1,000,000 in term life
+                                    insurance coverage. Applicants age 60 to 64 and eligible non-U.S. citizens may apply
+                                    for as much as $500,000.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show5==false">
+                            <div (click)="openDialog8()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog8()" style="cursor:pointer;">add</mat-icon>
+                                    How do i get information about my policy values?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom5==true">
+                            <div (click)="openDialog9()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog9()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;How do i get information about my policy values?
+                                </h3>
+                                <h4>
+                                    <br>
+                                    You can view your policy values online by logging in to our online account access
+                                    service. If you have not enrolled yet for Insurance Online Account Access, you may
+                                    do so by using the Login box at the top right corner of the Insurance.com homepage.
+                                    <br>
+                                    On the Login screen, click on the register link in the First Time User box to begin
+                                    your registration online. If you need assistance with registration, please call
+                                    1-080-043-5413. The "First Time Logging in" link at the top of the enrollment page
+                                    shows the products supported for product owners. Once you have your username and
+                                    password and have logged in to the account access service, you will be able to view
+                                    your policy values. Please keep in mind that detailed policy information may not be
+                                    available for all of your policies.
+                                    <br>
+                                    To access Insurance's automated response system, call us toll-free at
+                                    1-080-043-5413. Remember to have your policy numbers handy when you call. You also
+                                    have the option of speaking with a customer service specialist if the information
+                                    you need is not available through the automated response system, or if you have
+                                    additional questions or requests.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show6==false">
+                            <div (click)="openDialog10()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog10()" style="cursor:pointer;">add</mat-icon>
+                                    How do i take loan out against my insurance policy?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom6==true">
+                            <div (click)="openDialog11()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog11()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;How do i take loan out against my insurance policy?
+                                </h3>
+                                <h4>
+                                    <br>
+                                    Please be aware that withdrawals and loans will affect policy values and the death
+                                    benefit, and thus, may have tax consequences. To request a loan or withdrawal from
+                                    your Insurance policy, or to perform a cash surrender of your policy, you can use
+                                    our online portal or call our Customer Service Center at 1-080-043-5413, Mon.-Fri.,
+                                    8 a.m.-8 p.m. ET. Please have your policy numbers available when you call.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card-content>
+
+
+                <mat-card-content *ngIf="addmorenom==true">
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show7==false">
+                            <div (click)="openDialog12()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog12()" style="cursor:pointer;">add</mat-icon>
+                                    What is life insurance?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%;" *ngIf="addmorenom7==true">
+                            <div (click)="openDialog13()">
+                                <h3 style=" font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog13()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;Why should i buy life Insurance ?
+                                </h3>
+                                <h4>
+                                    Life insurance coverage is a means of protection from financial loss that could
+                                    occur due to the death of the insured individual. When you apply for your policy,
+                                    you designate “beneficiaries” - individuals or entities (such as a trust or estate)
+                                    to receive the payout of death benefit funds. In many cases, this money can be
+                                    critical to assisting the beneficiaries with household expenses, debt and other
+                                    financial obligations that your income previously supported.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show1==false">
+                            <div (click)="openDialog2()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog2()" style="cursor:pointer;">add</mat-icon>
+                                    Why should i buy life Insurance ?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%;" *ngIf="addmorenom1==true">
+                            <div (click)="openDialog3()">
+                                <h3 style=" font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog3()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;Why should i buy life Insurance ?
+                                </h3>
+                                <h4>
+                                    The most important reason to buy life insurance is to help establish a foundation of
+                                    financial security that could provide money to care for and support your dependents
+                                    (such as young children, non-working spouses or elderly parents) should you die.
+                                    Aside from dealing with grief in their loss, they also would have to manage through
+                                    any financial impact from your passing. Life insurance can be an important tool to:
+                                    <ul>
+                                        <li> Replace income for dependents: If family members depend on your income,
+                                            life insurance can replace that income or a portion of it to bridge a
+                                            financial gap in the household</li>
+                                        <li>Pay funeral expenses: Life insurance can help pay your funeral and burial
+                                            costs as well as any associated costs.</li>
+                                        <li>Fulfill debt obligations: Funds from life insurance can assist in paying
+                                            outstanding debts including credit cards, loans, mortgage and other similar
+                                            obligations.</li>
+                                        <li>Pay federal "death" taxes and state "death" taxes: Death benefit funds can
+                                            help cover potential estate taxes so that your heirs will not have to
+                                            liquidate other assets or take a smaller inheritance.</li>
+                                        <li>Create a source of savings: Certain types of life insurance accumulate a
+                                            cash value that can be borrowed or withdrawn by the policy owner while the
+                                            policy is in force.</li>
+                                    </ul>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show2==false">
+                            <div (click)="openDialog4()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog4()" style="cursor:pointer;">add</mat-icon>
+                                    What should i choose what type of life insurance to buy ?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom2==true">
+                            <div (click)="openDialog5()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog5()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;What should i choose what type of life insurance to buy ?
+                                </h3>
+                                <h4>
+                                    <br>
+                                    You should consider term life insurance if:
+                                    <br>
+                                    • You need life insurance protection for a specific period of time. Term life
+                                    coverage offers you the flexibility to align the amount of time you’ll need coverage
+                                    to the length of the term policy. For example, if you have young children and want
+                                    to ensure that - should you not be there to provide funds to pay for their education
+                                    or their care until they are grown, you might buy a 20-year term life policy. Or if
+                                    you need funds to repay a debt (such as a mortgage or school loans) within a
+                                    specific period of time (20-year loan), a term policy may be a good option for you.
+                                    <br>
+                                    • You have a limited budget but may need a higher amount of coverage to still
+                                    provide for those you leave behind, then term life may offer that balance.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show4==false">
+                            <div (click)="openDialog6()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog6()" style="cursor:pointer;">add</mat-icon>
+                                    What is the maximum amount of coverage I can currently apply for ?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom4==true">
+                            <div (click)="openDialog7()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog7()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;What is the maximum amount of coverage I can currently apply for ?
+                                </h3>
+                                <br>
+                                <h4>
+                                    U.S. citizen applicants under age 60 may apply for up to $1,000,000 in term life
+                                    insurance coverage. Applicants age 60 to 64 and eligible non-U.S. citizens may apply
+                                    for as much as $500,000.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show5==false">
+                            <div (click)="openDialog8()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog8()" style="cursor:pointer;">add</mat-icon>
+                                    How do i get information about my policy values?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom5==true">
+                            <div (click)="openDialog9()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog9()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;How do i get information about my policy values?
+                                </h3>
+                                <h4>
+                                    <br>
+                                    You can view your policy values online by logging in to our online account access
+                                    service. If you have not enrolled yet for Insurance Online Account Access, you may
+                                    do so by using the Login box at the top right corner of the Insurance.com homepage.
+                                    <br>
+                                    On the Login screen, click on the register link in the First Time User box to begin
+                                    your registration online. If you need assistance with registration, please call
+                                    1-080-043-5413. The "First Time Logging in" link at the top of the enrollment page
+                                    shows the products supported for product owners. Once you have your username and
+                                    password and have logged in to the account access service, you will be able to view
+                                    your policy values. Please keep in mind that detailed policy information may not be
+                                    available for all of your policies.
+                                    <br>
+                                    To access Insurance's automated response system, call us toll-free at
+                                    1-080-043-5413. Remember to have your policy numbers handy when you call. You also
+                                    have the option of speaking with a customer service specialist if the information
+                                    you need is not available through the automated response system, or if you have
+                                    additional questions or requests.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show6==false">
+                            <div (click)="openDialog10()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog10()" style="cursor:pointer;">add</mat-icon>
+                                    How do i take loan out against my insurance policy?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom6==true">
+                            <div (click)="openDialog11()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog11()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;How do i take loan out against my insurance policy?
+                                </h3>
+                                <h4>
+                                    <br>
+                                    Please be aware that withdrawals and loans will affect policy values and the death
+                                    benefit, and thus, may have tax consequences. To request a loan or withdrawal from
+                                    your Insurance policy, or to perform a cash surrender of your policy, you can use
+                                    our online portal or call our Customer Service Center at 1-080-043-5413, Mon.-Fri.,
+                                    8 a.m.-8 p.m. ET. Please have your policy numbers available when you call.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show8==false">
+                            <div (click)="openDialog14()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog14()" style="cursor:pointer;">add</mat-icon>
+                                    Is Permanent Life Insurance Taxable?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom8==true">
+                            <div (click)="openDialog15()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog15()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;Is Permanent Life Insurance Taxable?
+                                </h3>
+                                <h4>
+                                    <br>
+                                    Permanent life insurance is not taxable until you withdraw funds from the cash
+                                    portion of the policy. If you take out a “loan” against the policy, the amount you
+                                    borrow is not taxable. Death benefits paid out to your named beneficiary are exempt
+                                    from both income tax and estate taxes.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show9==false">
+                            <div (click)="openDialog16()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog16()" style="cursor:pointer;">add</mat-icon>
+                                    How to Buy Permanent Life Insurance?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom9==true">
+                            <div (click)="openDialog17()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog17()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;How to Buy Permanent Life Insurance?
+                                </h3>
+                                <h4>
+                                    <br>
+                                    Knowing how to buy permanent life insurance is very important. Your first step is to
+                                    determine how much permanent life insurance you need. Since there are many
+                                    variations of permanent insurance available, it is equally vital that you carefully
+                                    shop around. Consider the options and format of the policy you choose, as the costs
+                                    as can vary considerably from one life insurance Company to another. Your best
+                                    approach is to work with an independent agent in the Trusted Choice network who can
+                                    do the comparison shopping for you and help you buy the right permanent life
+                                    insurance policy for your needs at the best rates.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show10==false">
+                            <div (click)="openDialog18()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog18()" style="cursor:pointer;">add</mat-icon>
+                                    How do I file a death claim?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom10==true">
+                            <div (click)="openDialog19()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog19()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;How do I file a death claim?
+                                </h3>
+                                <h4>
+                                    <br>
+                                    There are two ways you can now file a death claim on an Insurance policy or account.
+                                    You can submit your individual life insurance claim online and on your own time at
+                                    insurance website Opens in a new window. or contact your Financial Professional.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show11==false">
+                            <div (click)="openDialog20()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog20()" style="cursor:pointer;">add</mat-icon>
+                                    How do I get information about my policy values?
+                                </h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom11==true">
+                            <div (click)="openDialog21()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog21()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;How do I get information about my policy values?
+                                </h3>
+                                <h4>
+                                    <br>
+                                    You can view your policy values online by logging in to our online account access
+                                    service. If you have not enrolled yet for Insurance Online Account Access, you may
+                                    do so by using the Login box at the top right corner of the Insurance.com homepage.
+                                    On the Login screen, click on the register link in the First Time User box to begin
+                                    your registration online. If you need assistance with registration, please call
+                                    1-080-043-5413. The "First Time Logging in" link at the top of the enrollment page
+                                    shows the products supported for product owners. Once you have your username and
+                                    password and have logged in to the account access service, you will be able to view
+                                    your policy values. Please keep in mind that detailed policy information may not be
+                                    available for all of your policies.
+                                    To access Insurance's automated response system, call us toll-free at
+                                    1-080-043-5413. Remember to have your policy numbers handy when you call. You also
+                                    have the option of speaking with a customer service specialist if the information
+                                    you need is not available through the automated response system, or if you have
+                                    additional questions or requests.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show12==false">
+                            <div (click)="openDialog22()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog22()" style="cursor:pointer;">add</mat-icon>
+                                    How do I change my Beneficiary?
+                                </h3>
+                            </div>
+                        </div>
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom12==true">
+                            <div (click)="openDialog23()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog23()" style="cursor: pointer;">remove</mat-icon>
+                                    &nbsp;How do I change my Beneficiary?
+                                </h3>
+                                <h4>
+                                    <br>
+                                    Log in to your Account. If you do not have Account Access, register on the portal.
+                                    You may change Beneficiary Information by accessing "Change Beneficiary(ies)" from
+                                    your Policy Profile page or by accessing the "Forms Library" and selecting "Request
+                                    to Change Beneficiary on Life Insurance" form.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </mat-card-content>
+            </mat-card>
+        </div>
+
+
+        <div fxFlex="30%">
+            <mat-card class="mat-elevation-z8" style="border: 1px solid #43434366;">
+                <mat-card-content class="cardContent">
+                    <p>
+                        Send us an email and we will respond to you at the earliest
+                    </p>
+                </mat-card-content>
+                <button mat-raised-button color="primary" style="margin-left: 25%;" routerLink="/user/mail">Send Us
+                    Email</button>
+                <mat-card-content class="cardContent">
+
+                </mat-card-content>
+            </mat-card>
+            <br>
+            <br>
+
+            <mat-card class="mat-elevation-z8" style="border: 1px solid #43434366;">
+                <mat-card-content class="cardContent">
+                    <h3 style="font-size: 20px;">
+                        Customer Service Agent
+                    </h3><br>
+                    <p>
+                        Speak to our Customer Service Agent using Web Chat
+                    </p>
+                </mat-card-content>
+                <mat-card-content class="cardContent">
+                    <button mat-raised-button color="primary" style="margin-left: 30%; margin-bottom: 6%;">Chat
+                        Now</button>
+                    <br>
+                    <p>
+                        Our agents are available between <span style="font-size: 15px;"><b>09:00 to 18:00 EST on
+                                weekdays</b></span>
+                    </p>
+                    <p>
+                        If you are contacting us post business hours, we will respond back on the next working day
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+<br>

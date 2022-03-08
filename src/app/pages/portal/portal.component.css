@@ -1,0 +1,32 @@
+.body1
+{
+    margin-top: 5%;
+    margin-left: 20%;
+}
+  
+mat-card {
+  background-color: #5DADE2 ;
+  }
+  .example-card1{
+    width: 240px;
+    height: 170px;
+ 
+    cursor: pointer;
+   
+  }
+  
+  .example-card2{
+    width: 240px;
+  height: 170px;
+  
+    cursor: pointer;
+  
+  }
+  .example-card3{
+    width: 230px;
+  height: 160px;
+    cursor: pointer; 
+  }
+  
+
+ 

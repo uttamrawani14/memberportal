@@ -1,0 +1,36 @@
+
+
+
+  <div class ="container1">
+    <div class="row1">
+    <div class="col1">
+    <h1>For wonderful experience, Please connect with us!</h1>
+    <hr>
+    </div>
+    <div class="col2">
+    <div class="card1 card2">
+      <form  (ngSubmit)="formSubmit()">
+        <br>
+              <div class="controles-container">
+               
+            
+                <h3>Username</h3>
+                <mat-form-field  appearance="outline">
+                  <input  name="username" [(ngModel)]="loginData.username" matInput placeholder=" Username">
+                </mat-form-field>
+                <h3>Password</h3>
+                <mat-form-field  appearance="outline">
+                  <input  type="password" [(ngModel)]="loginData.password"  name="password"  matInput placeholder="Password">
+                </mat-form-field>
+              </div>
+         <button type="submit" mat-raised-button  color="primary" class="btn" >Submit</button><br>
+         <button type="reset" mat-raised-button  class="btn1">Cancel</button>
+        </form>
+ 
+    </div>
+    </div>
+     
+    </div>
+    </div>
+    
+    

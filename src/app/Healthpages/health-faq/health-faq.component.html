@@ -1,0 +1,455 @@
+<h2 style="margin-top:0px ; margin-bottom:0px">Help Center</h2>
+<p style="margin-left:1%; opacity: 0.9;">Either Search or Browse our frequently asked questions. If you are not satisfied with the answer, please write to us or chat with us .We are happy to help!</p>
+<mat-grid-list cols="7" rowHeight="179px" gutterSize="1px">
+    <mat-grid-tile [colspan]="5" [rowspan]="1">
+        <mat-card class="mat-elevation-z8 card1">
+            <mat-card-header>
+                <mat-card-title>How can we help you?</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <mat-form-field appearance="outline">
+                    <mat-label>Write your question here.....</mat-label>
+                    <input matInput placeholder="Search.....">
+                    <mat-icon matSuffix>search</mat-icon>
+                </mat-form-field>
+                <p>
+                    <br>
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+        <mat-card class="mat-elevation-z8" style="background-color: #f3da69;">
+            <mat-card-header>
+                <mat-card-title>Useful Links</mat-card-title>
+            </mat-card-header>
+
+            <mat-card-content>
+                <p style="padding-top: 1%;"><span style="font-size: 20px; font-weight: 600;padding-top: 1%;cursor: pointer;">✓&nbsp;</span><u>Maternity Insurance</u></p>
+                <p style="padding-top: 1%;"><span style="font-size: 20px; font-weight: 600;padding-top: 1%;cursor: pointer;">✓ </span><u>Criticall Illness</u></p>
+                <p style="padding-top: 1%;"><span style="font-size: 20px; font-weight: 600;padding-top: 1%;cursor: pointer;">✓ </span><u>Family Floater</u></p>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+<br>
+<div style="padding: 10px;">
+    <div fxLayout="row wrap" fxLayoutGap="5px grid">
+        <div fxFlex="70%">
+            <mat-card class="mat-elevation-z8">
+
+                <div>
+                    <button mat-raised-button color="primary" *ngIf="show==false" (click)="openDialog1()">Popular Question</button>
+                    <button mat-raised-button *ngIf="show==false" (click)="openDialog()" style="margin-left: 20px;">All Questions</button>
+                    <button mat-raised-button *ngIf="addmorenom==true" (click)="openDialog1()">Popular Question</button>
+                    <button mat-raised-button color="primary" *ngIf="addmorenom==true" (click)="openDialog()" style="margin-left: 20px;">All Questions</button>
+                </div>
+                <br>
+                <mat-card-content *ngIf="show==false">
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show7==false">
+                            <div (click)="openDialog12()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog12()" style="cursor:pointer;">add</mat-icon>
+                                    What is Health insurance ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%;" *ngIf="addmorenom7==true">
+                            <div (click)="openDialog13()">
+                                <h3 style=" font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog13()" style="cursor: pointer;">remove</mat-icon> &nbsp;What is Health insurance ?</h3>
+                                <h4>
+                                    Health insurance is a type of insurance that covers medical expenses that arise due to an illness. These expenses could be related to hospitalisation costs, cost of medicines or doctor consultation fees.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show1==false">
+                            <div (click)="openDialog2()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog2()" style="cursor:pointer;">add</mat-icon>
+                                    What do you mean by a pre-existing disease ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%;" *ngIf="addmorenom1==true">
+                            <div (click)="openDialog3()">
+                                <h3 style=" font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog3()" style="cursor: pointer;">remove</mat-icon> &nbsp;What do you mean by a pre-existing disease ?</h3>
+                                <h4>
+                                    Any condition, ailment or injury or related condition(s), for which you have had signs or symptoms, and/or were diagnosed, and/or received medical advice/treatment, within 48 months prior to the first policy with the insurance company is called a pre-existing
+                                    disease.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show2==false">
+                            <div (click)="openDialog4()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog4()" style="cursor:pointer;">add</mat-icon>
+                                    What do you mean by waiting period ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom2==true">
+                            <div (click)="openDialog5()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog5()" style="cursor: pointer;">remove</mat-icon> &nbsp;What do you mean by waiting period ?</h3>
+                                <h4>
+                                    The duration after which you can make a claim is called a waiting period. Our waiting periods for ICICI Lombard Complete Health Insurance and Health Booster policy are as below:
+                                    <ul>
+                                        <li>No waiting period for accidental hospitalisation.</li>
+                                        <li>30 days for all claims other than accidental hospitalisation.</li>
+                                        <li>2 years for pre-existing diseases. These diseases should be declared at the time of proposal and accepted by us for policy with sum insured of ₹3 lakh and above.</li>
+                                        <li>2 years for standard list of diseases and procedures.</li>
+                                    </ul>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show4==false">
+                            <div (click)="openDialog6()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog6()" style="cursor:pointer;">add</mat-icon>
+                                    What does annual sum insured mean ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom4==true">
+                            <div (click)="openDialog7()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog7()" style="cursor: pointer;">remove</mat-icon> &nbsp;What does annual sum insured mean ?</h3>
+                                <h4>
+                                    Annual (basic) sum insured is the maximum amount that an insurance company will pay you in the event of a claim in a policy year.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show5==false">
+                            <div (click)="openDialog8()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog8()" style="cursor:pointer;">add</mat-icon>
+                                    If I increase my sum insured at the time of renewal, does a waiting period apply ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom5==true">
+                            <div (click)="openDialog9()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog9()" style="cursor: pointer;">remove</mat-icon> &nbsp;If I increase my sum insured at the time of renewal, does a waiting period apply ?</h3>
+                                <h4>
+                                    Yes, a waiting period will apply only to the added sum insured.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show6==false">
+                            <div (click)="openDialog10()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog10()" style="cursor:pointer;">add</mat-icon>
+                                    My employer provides me with a health insurance. Do I still need one ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom6==true">
+                            <div (click)="openDialog11()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog11()" style="cursor: pointer;">remove</mat-icon> &nbsp;My employer provides me with a health insurance. Do I still need one ?</h3>
+                                <h4>
+                                    Numerous employers offer group or individual health plans. However, these are not customised as per your needs and may have certain restrictions and limitations. Also, the coverage is dependent on the continuation of the job. Once you quit, you cannot
+                                    avail the health plan benefits. Therefore, it is important to insure yourself with a comprehensive cover that lets you customise as per your needs. For example, for a family of 4 members, a sum insured of ₹2 lakh-₹3
+                                    lakh provided by your employer may be inadequate.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </mat-card-content>
+
+
+                <mat-card-content *ngIf="addmorenom==true">
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show7==false">
+                            <div (click)="openDialog12()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog12()" style="cursor:pointer;">add</mat-icon>
+                                    What is Health insurance ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%;" *ngIf="addmorenom7==true">
+                            <div (click)="openDialog13()">
+                                <h3 style=" font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog13()" style="cursor: pointer;">remove</mat-icon> &nbsp;What is Health insurance ?</h3>
+                                <h4>
+                                    Health insurance is a type of insurance that covers medical expenses that arise due to an illness. These expenses could be related to hospitalisation costs, cost of medicines or doctor consultation fees.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show1==false">
+                            <div (click)="openDialog2()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog2()" style="cursor:pointer;">add</mat-icon>
+                                    What do you mean by a pre-existing disease ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%;" *ngIf="addmorenom1==true">
+                            <div (click)="openDialog3()">
+                                <h3 style=" font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog3()" style="cursor: pointer;">remove</mat-icon> &nbsp;What do you mean by a pre-existing ?</h3>
+                                <h4>
+                                    Any condition, ailment or injury or related condition(s), for which you have had signs or symptoms, and/or were diagnosed, and/or received medical advice/treatment, within 48 months prior to the first policy with the insurance company is called a pre-existing
+                                    disease.
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show2==false">
+                            <div (click)="openDialog4()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog4()" style="cursor:pointer;">add</mat-icon>
+                                    What do you mean by waiting period ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom2==true">
+                            <div (click)="openDialog5()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog5()" style="cursor: pointer;">remove</mat-icon> &nbsp;What do you mean by waiting period ?</h3>
+                                <h4>
+                                    The duration after which you can make a claim is called a waiting period. Our waiting periods for ICICI Lombard Complete Health Insurance and Health Booster policy are as below:
+                                    <ul>
+                                        <li>No waiting period for accidental hospitalisation.</li>
+                                        <li>30 days for all claims other than accidental hospitalisation.</li>
+                                        <li>2 years for pre-existing diseases. These diseases should be declared at the time of proposal and accepted by us for policy with sum insured of ₹3 lakh and above.</li>
+                                        <li>2 years for standard list of diseases and procedures.</li>
+                                    </ul>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show4==false">
+                            <div (click)="openDialog6()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog6()" style="cursor:pointer;">add</mat-icon>
+                                    What does annual sum insured mean ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom4==true">
+                            <div (click)="openDialog7()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog7()" style="cursor: pointer;">remove</mat-icon> &nbsp;What does annual sum insured mean ?</h3>
+                                <br>
+                                <h4>
+                                    Annual (basic) sum insured is the maximum amount that an insurance company will pay you in the event of a claim in a policy year.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show5==false">
+                            <div (click)="openDialog8()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog8()" style="cursor:pointer;">add</mat-icon>
+                                    If I increase my sum insured at the time of renewal, does a waiting period apply ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom5==true">
+                            <div (click)="openDialog9()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog9()" style="cursor: pointer;">remove</mat-icon> &nbsp;If I increase my sum insured at the time of renewal, does a waiting period apply ?</h3>
+                                <h4>
+                                    Yes, a waiting period will apply only to the added sum insured.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show6==false">
+                            <div (click)="openDialog10()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog10()" style="cursor:pointer;">add</mat-icon>
+                                    My employer provides me with a health insurance. Do I still need one ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom6==true">
+                            <div (click)="openDialog11()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog11()" style="cursor: pointer;">remove</mat-icon> &nbsp;My employer provides me with a health insurance. Do I still need one ?</h3>
+                                <h4>
+                                    Numerous employers offer group or individual health plans. However, these are not customised as per your needs and may have certain restrictions and limitations. Also, the coverage is dependent on the continuation of the job. Once you quit, you cannot
+                                    avail the health plan benefits. Therefore, it is important to insure yourself with a comprehensive cover that lets you customise as per your needs. For example, for a family of 4 members, a sum insured of ₹2 lakh-₹3
+                                    lakh provided by your employer may be inadequate.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show8==false">
+                            <div (click)="openDialog14()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog14()" style="cursor:pointer;">add</mat-icon>
+                                    From what age can I include my children in the plan ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom8==true">
+                            <div (click)="openDialog15()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog15()" style="cursor: pointer;">remove</mat-icon> &nbsp;From what age can I include my children in the plan ?</h3>
+                                <h4>
+                                    You can include your children aged between 90 days to 20 years in your policy. Newborns can be included after 90 days of birth. However, your daughter or son cannot be shown as a ‘dependent’ if they file a joint tax return.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show9==false">
+                            <div (click)="openDialog16()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog16()" style="cursor:pointer;">add</mat-icon>
+                                    Can a person have more than one health insurance policy ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom9==true">
+                            <div (click)="openDialog17()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog17()" style="cursor: pointer;">remove</mat-icon> &nbsp;Can a person have more than one health insurance policy ?</h3>
+                                <h4>
+                                    Yes. You can always have more than one health insurance plan based on necessity and coverage requirements as every plan works differently and offer varied benefits.
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show10==false">
+                            <div (click)="openDialog18()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog18()" style="cursor:pointer;">add</mat-icon>
+                                    What to do if I am admitted in a non-network hospital ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom10==true">
+                            <div (click)="openDialog19()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog19()" style="cursor: pointer;">remove</mat-icon> &nbsp;What to do if I am admitted in a non-network hospital ?</h3>
+                                <h4>
+                                    Whenever you get admitted at a non-network hospital you have to pay the bills first and later claim for reimbursement. Always choose a health insurance company which has a large network hospital tie-up.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show11==false">
+                            <div (click)="openDialog20()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog20()" style="cursor:pointer;">add</mat-icon>
+                                    What is the maximum number of claims allowed over a year ?</h3>
+                            </div>
+                        </div>
+
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom11==true">
+                            <div (click)="openDialog21()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog21()" style="cursor: pointer;">remove</mat-icon> &nbsp;What is the maximum number of claims allowed over a year ?</h3>
+                                <h4>
+                                    There's no limit on number of claims. If your sum insured gets exhausted then you may not be able to raise claims. We recommend buying our Optima restore health insurance plan or my:health suraksha as both of these plan help you by offering coverage post
+                                    sum insured gets exhausted by restoring the lost sum insured. This helps you register more claims.
+
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="mat-elevation-z8" style="border: 1px solid rgb(231, 225, 225);">
+                        <div style="padding: 1%;" *ngIf="show13==false">
+                            <div (click)="openDialog22()">
+                                <h3 style=" font-size: 18px; font-weight: 500; ">
+                                    <mat-icon (click)="openDialog22()" style="cursor:pointer;">add</mat-icon>
+                                    What is a claim settlement ratio ?</h3>
+                            </div>
+                        </div>
+                        <div style="padding: 1%; font-size: 18px; font-weight: 500;" *ngIf="addmorenom13==true">
+                            <div (click)="openDialog23()">
+                                <h3 style="font-size: 18px; font-weight: 500;">
+                                    <mat-icon (click)="openDialog23()" style="cursor: pointer;">remove</mat-icon> &nbsp;What is a claim settlement ratio ?</h3>
+                                <h4>
+                                    The claim settlement ratio (CSR) reveals the percentage of claims the insurer has paid out during a financial year. In simple words, it helps you know if your insurer has a strong financial capability to pay for claims.</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <br> </mat-card-content>
+            </mat-card>
+        </div>
+
+
+        <div fxFlex="30%">
+            <mat-card class="mat-elevation-z8" style="border: 1px solid #43434366;margin-left: 15px;">
+                <mat-card-content class="cardContent">
+                    <p>
+                        Send us an email and we will respond to you at the earliest
+                    </p>
+                </mat-card-content>
+                <button mat-raised-button color="primary" style="margin-left: 25%;" routerLink="/Health/mail">Send Us Email</button>
+                <mat-card-content class="cardContent">
+
+                </mat-card-content>
+            </mat-card>
+            <br>
+            <br>
+
+            <mat-card class="mat-elevation-z8" style="border: 1px solid #43434366;margin-left: 15px;">
+                <mat-card-content class="cardContent">
+                    <h3 style="font-size: 20px;">
+                        Customer Service Agent
+                    </h3><br>
+                    <p>
+                        Speak to our Customer Service Agent using Web Chat
+                    </p>
+                </mat-card-content>
+                <mat-card-content class="cardContent">
+                    <button mat-raised-button color="primary" style="margin-left: 30%; margin-bottom: 2%;">Chat Now</button>
+                    <br>
+                    <p>
+                        Our agents are available between <span style="font-size: 15px;"><b>09:00 to 18:00 EST on weekdays</b></span>
+                    </p>
+                    <p>
+                        If you are contacting us post business hours, we will respond back on the next working day
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+</div>
+<br>

@@ -1,0 +1,184 @@
+<div>
+    <p class="heading">Our Expertise !</p>
+    <p class="subheading">
+        Easy process to book an appointment.
+    </p>
+</div>
+<mat-grid-list cols="5" rowHeight="150px" gutterSize="5px">
+    <mat-grid-tile [colspan]="3" [rowspan]="2">
+        <mat-card class="card1 mat-elevation-z8">
+            <mat-card-header>
+                <mat-card-title>
+                    Right Consultation at right time!
+                </mat-card-title>
+            </mat-card-header>
+            <mat-divider style="width: 94%;margin-left: 3%;opacity: 0.5;"></mat-divider>
+            <mat-card-content>
+                <div class="content">
+                    <div fxLayout="row wrap" fxLayoutGap="0px grid">
+                        <div fxFlex="65%" style="margin-top: 10px;color:gray;">
+                            <p>
+                                <mat-icon>keyboard_arrow_right</mat-icon>
+                                Our doctors listen to you patiently and prescribes <span style="margin-left: 28px;"> what's necessary and best.</span>
+                            </p>
+                            <p>
+                                <mat-icon>keyboard_arrow_right</mat-icon>
+                                Doctors have been choosen with the aim of delivering <span style="margin-left: 28px;">  a better experience and care to all.</span>
+                            </p>
+                            <p>
+                                <mat-icon>keyboard_arrow_right</mat-icon>
+                                They diagnose and treat their patients for all sorts <span style="margin-left: 28px;"> of ailments.</span>
+                            </p>
+                            <p>
+                                <mat-icon>keyboard_arrow_right</mat-icon>
+                                Book an appointment at your convenience.
+                            </p>
+                        </div>
+                        <div fxFlex="10%" style="margin-top: 35px;">
+                            <img src="../../../../assets/images/bookConsult.PNG" width="210px">
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+
+
+
+
+
+    <mat-grid-tile [colspan]="2" [rowspan]="2">
+        <mat-card class="card2 mat-elevation-z8">
+            <mat-card-content>
+                <div class="heading1">Find a Doctor, Dentist, or Facility in</div>
+                <div>
+                    <mat-form-field appearance="outline" style="padding-top: 10px;width: 100%;">
+                        <mat-label>Find by Zip Code</mat-label>
+                        <input matInput [value]="560037">
+                    </mat-form-field>
+                </div>
+                <div>
+                    <mat-form-field appearance="outline" style="padding-top: 10px;width: 100%;">
+                        <mat-label>Find by Doctor type</mat-label>
+                        <mat-select [(value)]="selected">
+                            <mat-option value="option1">Cardiologist</mat-option>
+                            <mat-option value="option2">Dentist</mat-option>
+                            <mat-option value="option3">Gynaecologist</mat-option>
+                            <mat-option value="option4">Orthopaedic surgeon</mat-option>
+                            <mat-option value="option5">Paediatrician</mat-option>
+                        </mat-select>
+                    </mat-form-field>
+                </div>
+                <div>
+                    <button mat-raised-button class="btn1" (click)="displayCrads()"><mat-icon style="font-size: 20px;">search</mat-icon>Search</button>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+<br>
+<mat-grid-list cols="4" rowHeight="160px" *ngIf="displayMatCards == true">
+    <mat-grid-tile [colspan]="4" [rowspan]="2">
+        <div class="content">
+            <div fxLayout="row wrap" fxLayoutGap="50px grid">
+                <div fxFlex="30%">
+                    <mat-card class="mat-elevation-z8" style="width: 330px;margin-left: 5px;border-radius: 15px;">
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image"></div>
+                            <mat-card-title>Dr. Bonavita</mat-card-title>
+                            <mat-card-subtitle>+91 9876543210</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <div class="content">
+                                <div fxLayout="row wrap" fxLayoutGap="10px grid">
+                                    <div fxFlex="45%">
+                                        <p>PCP ID : <span style="color: gray;">9905300M</span></p>
+                                        <p>Specialities : <span style="color: gray;">Cardiology</span></p>
+                                        <p>Network : <span style="color: gray;">Independent</span></p>
+                                    </div>
+                                    <div fxFlex="55%">
+                                        <p>
+                                            <mat-icon style="color: #53be95;">check_circle</mat-icon> Easily accessible by <span style="margin-left:24px ;">public transportation.</span>
+                                        </p>
+                                        <p>
+                                            <mat-icon style="color: #53be95;">check_circle</mat-icon>Accepts Medicaid.</p>
+                                        <p>
+                                            <mat-icon style="color: #53be95;">check_circle</mat-icon>Accepting new <span style="margin-left:24px ;">patients.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>HSR Bangalore, 560037</div><br>
+                            <button mat-raised-button class="btn2">Book an Appointment Now</button>
+
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+
+                <div fxFlex="30%">
+                    <mat-card class="mat-elevation-z8" style="width: 330px; margin-left: 25px;border-radius: 15px;">
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image1"></div>
+                            <mat-card-title>Dr. Lim Andrews</mat-card-title>
+                            <mat-card-subtitle>+91 0123456789</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <div class="content">
+                                <div fxLayout="row wrap" fxLayoutGap="10px grid">
+                                    <div fxFlex="45%">
+                                        <p>PCP ID : <span style="color: gray;">8805300M</span></p>
+                                        <p>Specialities : <span style="color: gray;">Cardiology</span></p>
+                                        <p>Network : <span style="color: gray;">Independent</span></p>
+                                    </div>
+                                    <div fxFlex="55%">
+                                        <p>
+                                            <mat-icon style="color: #53be95;">check_circle</mat-icon> Easily accessible by <span style="margin-left:24px ;">public transportation.</span>
+                                        </p>
+                                        <p>
+                                            <mat-icon style="color: #53be95;">check_circle</mat-icon>Accepts Medicaid.</p>
+                                        <p>
+                                            <mat-icon style="color: #53be95;">check_circle</mat-icon>Accepting new <span style="margin-left:24px ;">patients.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>HSR Bangalore, 560037</div><br>
+                            <button mat-raised-button class="btn2" style="width: 100%;">Book an Appointment Now</button>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+
+                <div fxFlex="30%">
+                    <mat-card class="mat-elevation-z8" style="width: 330px; margin-left: 45px;border-radius: 15px;">
+                        <mat-card-header>
+                            <div mat-card-avatar class="example-header-image2"></div>
+                            <mat-card-title>Dr. Claire</mat-card-title>
+                            <mat-card-subtitle>+91 9812654303</mat-card-subtitle>
+                        </mat-card-header>
+                        <mat-card-content>
+                            <div class="content">
+                                <div fxLayout="row wrap" fxLayoutGap="10px grid">
+                                    <div fxFlex="45%">
+                                        <p>PCP ID : <span style="color: gray;">9803500M</span></p>
+                                        <p>Specialities : <span style="color: gray;">Cardiology</span></p>
+                                        <p>Network : <span style="color: gray;">Independent</span></p>
+                                    </div>
+                                    <div fxFlex="55%">
+                                        <p>
+                                            <mat-icon style="color: #53be95;">check_circle</mat-icon> Easily accessible by <span style="margin-left:24px ;">public transportation.</span>
+                                        </p>
+                                        <p>
+                                            <mat-icon style="color: #53be95;">check_circle</mat-icon>Accepts Medicaid.</p>
+                                        <p>
+                                            <mat-icon style="color: #53be95;">check_circle</mat-icon>Accepting new <span style="margin-left:24px ;">patients.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>HSR Bangalore, 560037</div><br>
+                            <button mat-raised-button class="btn2" style="width: 100%;">Book an Appointment Now</button>
+                        </mat-card-content>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </mat-grid-tile>
+</mat-grid-list>
+<br>

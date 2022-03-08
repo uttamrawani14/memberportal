@@ -1,0 +1,40 @@
+.heading {
+    font-size: 18px;
+    padding: 10px;
+}
+
+mat-card {
+    /* background-color: #4343431A; */
+    width: 100%;
+    border: 1px solid #43434366;
+}
+
+.box {
+    float: left;
+    width: 30%;
+    padding-left: 15px;
+    padding-top: 35px;
+}
+
+.box1 {
+    float: left;
+    /* width: 50%; */
+    /* padding: 0px 0px 40px 50px; */
+    padding-top: 35px;
+}
+
+.amount {
+    color: #5A607F;
+    font-size: 20px;
+}
+
+
+
+mat-divider {
+    opacity: 40%;
+}
+
+.secondTile {
+    color: #75788a;
+    /* margin-left: 50px; */
+}

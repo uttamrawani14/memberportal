@@ -1,0 +1,88 @@
+<div class="heading">
+    Welcome Mr Uttam Kumar !</div>
+<mat-grid-list cols="6" rowHeight="150px" gutterSize="15px">
+    <mat-grid-tile [colspan]="4" [rowspan]="2">
+        <mat-card class="mat-elevation-z8">
+            <mat-card-header>
+                <mat-card-title>Your Top Goal</mat-card-title>
+                <a routerLink="/user/404" style="margin-left: 65%;">View All</a>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <div class="box">
+                    <img src="../../../../assets/images/rretire2.png" width="150px"></div>
+                <div class="box">Save enough money for retirement. <br> Target date <b>August 2043</b></div>
+                <div class="box1">Save atleast <span style="color: #4c8ca0">$600,000 </span>for retirement</div>
+            </mat-card-content>
+            <div style="float: right;">
+                <app-life-chart></app-life-chart>
+                <!-- <p>Your Savings untill now $200,345.00</p> -->
+            </div>
+        </mat-card>
+    </mat-grid-tile>
+
+
+    <mat-grid-tile [colspan]="2" [rowspan]="2">
+        <mat-card class="mat-elevation-z8">
+            <mat-card-header>
+                <mat-card-title>Your Portfolio <span style="color: #75788a;font-size: 12px;">(3 products)</span></mat-card-title>
+                <a  style="margin-left: 5%;" routerLink="/user/allpolicy">View All</a>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <div><img src="../../../../assets/images/time-is-money.png" width="40px" style="margin-left: 40%;padding-top: 10px;"></div>
+            <mat-card-content>
+                <br>
+                <div style="color: #4c8ca0;margin-left: 90px;">Variable Annuities</div>
+                <span class="secondTile">Policy Value : </span><span> $ 200,345.00</span><br>
+                <span class="secondTile">Total Premium Paid : </span><span>$ 185,000</span><br>
+                <span class="secondTile">Next Policy Anniversary date : </span><span> 02/02/2022</span><br>
+                <span class="secondTile">Total Amount Withdrawn : </span><span> $ 26000</span><br>
+                <span class="secondTile">Surrender Charge Free Amount : </span><span> $ 5600</span><br>
+            </mat-card-content>
+            <mat-card-actions >
+                <button type="button" mat-raised-button color="primary" routerLink="/user/variable-annuities" >View Details</button>
+                <button type="button" mat-raised-button color="primary" >Make Purchase Payment</button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="4" [rowspan]="1">
+        <mat-card class="mat-elevation-z8">
+            <mat-card-header>
+                <mat-card-title>Inspiration</mat-card-title>
+                <a routerLink="/user/404" style="margin-left: 70%;">View All</a>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+                <div style="float: left;padding: 15px;">
+                    <img src="../../../../assets/images/feather-icon.png" width="40px">
+                </div>
+
+                <p style="color: #4c8ca0;padding-top: 30px;">
+                    How a small change can make a big difference
+                </p>
+                <p>Read how other people are saving for their retirements.</p>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="1">
+        <mat-card class="mat-elevation-z8">
+            <mat-card-header>
+                <mat-card-title>Suggested Actions</mat-card-title>
+                <a routerLink="/user/404" style="margin-left: 15%;">View All</a>
+            </mat-card-header>
+            <mat-divider></mat-divider>
+            <mat-card-content>
+
+                <div style="float: left;padding: 3px;">
+                    <img src="../../../../assets/images/write.png" width="25px">
+                </div>
+                <p style="color: #4c8ca0;padding-top: 10px;">Personal Profile Update</p>
+                <p>Your profile is 60% complete.Complete your profile to have control of your financial matters.
+                </p>
+            </mat-card-content>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+<br>

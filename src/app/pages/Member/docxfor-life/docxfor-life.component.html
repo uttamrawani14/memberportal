@@ -1,0 +1,105 @@
+<h2>My Documents</h2>
+<p style="margin-left: 1%;">View and Download your important Documents at any time!</p>
+<mat-grid-list cols="4" rowHeight="210px" gutterSize="1px">
+    <mat-grid-tile [colspan]="4" [rowspan]="1">
+        <mat-card>
+            <p class="firstCard">Please Select</p>
+            <div class="content">
+                <div fxLayout="row wrap" fxLayoutGap="70px grid">
+                    <div fxFlex="32%">
+                        <mat-form-field appearance="outline" style="width: 100%;">
+                            <mat-label>Documents for period</mat-label>
+                            <mat-select>
+                                <mat-option value="6 months">Last 6 months</mat-option>
+                                <mat-option value="1 year">Last 1 year</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div fxFlex="32%">
+                        <mat-form-field appearance="outline" style="width: 100%;">
+                            <mat-label>Policy Number</mat-label>
+                            <mat-select>
+                                <mat-option value="option1">PL123</mat-option>
+                                <mat-option value="option2">PL456</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div fxFlex="32%">
+                        <mat-form-field appearance="outline" style="width: 100%;">
+                            <mat-label>Document Type</mat-label>
+                            <mat-select>
+                                <mat-option value="all">All Documents</mat-option>
+                                <mat-option value="PDF">PDF</mat-option>
+                            </mat-select>
+                        </mat-form-field>
+                    </div>
+                </div>
+            </div>
+            <p style="color: gray;">
+                <mat-icon style="color:#4c8ca0;">error</mat-icon>
+                All Documents will be sent either electronically or by paper.
+            </p>
+        </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="4" [rowspan]="2">
+        <mat-card>
+            <p class="secondCard">Last 6 months</p>
+            <div class="content">
+                <div fxLayout="row wrap" fxLayoutGap="70px grid">
+                    <div fxFlex="32%">
+                        <div class="secondTitle">Policy Related Documents</div>
+                        <mat-divider></mat-divider>
+                        <br>
+                        <p>
+                            <mat-icon  class="pdf" Tax Statement mat-list-icon>picture_as_pdf</mat-icon>&nbsp;SIPP Key Features
+                            <mat-icon class="download" mat-list-icon>cloud_download</mat-icon>
+                            <span>02 Feb 2021, 13:39 | 123KB</span>
+
+                        </p>
+                        <p>
+                            <mat-icon class="pdf" mat-list-icon>picture_as_pdf</mat-icon>&nbsp;Statement of Benefits
+                            <mat-icon class="download" mat-list-icon>cloud_download</mat-icon>
+                            <span>24 Apr 2021, 10:25 | 176KB</span>
+                        </p>
+                        <p>
+                            <mat-icon class="pdf" mat-list-icon>picture_as_pdf</mat-icon>&nbsp;Tax Statement
+                            <mat-icon class="download" mat-list-icon>cloud_download</mat-icon>
+                            <span>24 Apr 2021, 10:25 | 176KB</span>
+                        </p>
+                        <p>
+                            <mat-icon class="pdf">picture_as_pdf</mat-icon>&nbsp;Address Change Letter
+                            <mat-icon class="download">cloud_download</mat-icon>
+                            <span>27 Jun 2021, 15:20 | 113KB</span>
+                        </p>
+                    </div>
+                    <div fxFlex="32%">
+                        <div class="secondTitle">Documents Uploaded</div>
+                        <br>
+                        <p>
+                            <mat-icon class="pdf">picture_as_pdf</mat-icon>&nbsp;Marriage Certificate
+                            <mat-icon class="download">cloud_download</mat-icon>
+                            <span>05 Apr 2021, 12:20 | 26.1MB</span>
+                        </p>
+                        <p>
+                            <mat-icon class="pdf">picture_as_pdf</mat-icon>&nbsp;Proof Of Address
+                            <mat-icon class="download">cloud_download</mat-icon>
+                            <span>10 Mar 2021, 11:50 | 98KB</span>
+                        </p>
+                    </div>
+                    <div fxFlex="34%">
+                        <div class="secondTitle">Others</div>
+                        <br>
+                        <p style="color: #4c8ca0;">
+                            <mat-icon> chat</mat-icon>&nbsp;Live Chat transcript
+                        </p>
+                        <p>
+                            Saved conversations are stored here so you can refer back to them later.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+<br>

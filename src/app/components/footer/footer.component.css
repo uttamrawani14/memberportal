@@ -1,0 +1,26 @@
+.services {
+    background: #F7D97C;
+}
+
+.content {
+    padding: 5px;
+}
+
+h4 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.subscribe {
+    background: white;
+    color: black;
+    text-align: center;
+    width: 75%;
+    margin-top: 60px;
+}
+
+input {
+    background-color: transparent;
+    border: 1px solid #15223240;
+    line-height: 30px;
+}
